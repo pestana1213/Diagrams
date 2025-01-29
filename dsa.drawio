@@ -1,9 +1,49 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 Edg/132.0.0.0" version="26.0.10">
   <diagram name="Página-1" id="0tpX9T-sp7RJFINyjF15">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="747" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#CCCCCC" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-xZHKj4vX9rd3sX_vwQ-1" target="t-xZHKj4vX9rd3sX_vwQ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-1" value="Vehicle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="160" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-5" value="&lt;br&gt;Sends GPS + Mileage Data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="90" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-xZHKj4vX9rd3sX_vwQ-6" target="t-xZHKj4vX9rd3sX_vwQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-6" value="API" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="510" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-xZHKj4vX9rd3sX_vwQ-8" target="t-xZHKj4vX9rd3sX_vwQ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t-xZHKj4vX9rd3sX_vwQ-8" target="t-xZHKj4vX9rd3sX_vwQ-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="585" y="380" />
+              <mxPoint x="460" y="380" />
+              <mxPoint x="460" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-8" value="&lt;ol&gt;&lt;li&gt;Validate the Data&lt;/li&gt;&lt;li&gt;Fetch mileage unit from tb_depot_settings&lt;/li&gt;&lt;li&gt;if mileage unit is miles -&amp;gt; convert to kms&lt;/li&gt;&lt;li&gt;Store the data&lt;/li&gt;&lt;/ol&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="270" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-9" value="tb_gps" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="480" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t-xZHKj4vX9rd3sX_vwQ-11" value="tb_vehicle_mileage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="480" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
